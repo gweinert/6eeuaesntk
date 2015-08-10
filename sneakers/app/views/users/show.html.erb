@@ -8,6 +8,10 @@
     <th>When I Bought It</th>
   </tr>
   <!-- hmmm I seem to be forgetting something -->
+  <% @user.shoes.each do |shoe|  %>
+    <%= shoe.brand %>
+    <%= shoe.year %>
+  <% end %>
 </table>
 
 <br>
